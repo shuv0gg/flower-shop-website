@@ -50,3 +50,99 @@ header img {
   margin-right: 192px;
   background-color: url(<path-to-image>) lightgray 50% / cover no-repeat;
 }
+.featured-flowers {
+  justify-content: center;
+  margin: 142px 530px 38px 530px;
+}
+.featured-flowers h3 {
+  color: #272727;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 800;
+  margin-bottom: 10px;
+  line-height: normal;
+}
+.featured-flowers p {
+  max-width: 525px;
+  color: rgba(39, 39, 39, 0.6);
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px; /* 166.667% */
+}
+.featured-cards {
+  display: flex;
+  justify-content: center;
+  margin: 0px 192px;
+  gap: 20px;
+}
+.card-1 {
+  width: 371px;
+  height: 430px;
+  border-radius: 300px 300px 0 0;
+  background-color: rgba(167, 33, 98, 0.15);
+}
+
+.card-2 {
+  width: 371px;
+  height: 430px;
+
+  border-radius: 300px 300px 0 0;
+  background-color: rgba(5, 151, 160, 0.15);
+}
+
+.card-3 {
+  width: 371px;
+  height: 430px;
+  flex-shrink: 0;
+  border-radius: 300px 300px 0 0;
+  background-color: rgba(71, 125, 17, 0.15);
+}
+.featured-cards img {
+  width: 248px;
+  height: 342px;
+  align-items: center;
+  margin: 88px 60px 0px 60px;
+  background-color: url(<path-to-image>) lightgray 50% / cover no-repeat;
+}
+
+.featured-cards h3 {
+  margin-top: 25.6px;
+  color: #272727;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 35px; /* 145.833% */
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-skip-ink: none;
+  text-decoration-thickness: auto;
+  text-underline-offset: auto;
+  text-underline-position: from-font;
+}
+.facilities {
+  margin: 102px 192px 0px 192px;
+  height: 256px;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  border-radius: 8px;
+  background: rgba(39, 39, 39, 0.05);
+  gap: 80px;
+}
+
+.facilities div {
+  margin-top: 68px;
+}
+.facilities img {
+  width: 70px;
+  height: 70px;
+  flex-shrink: 0;
+}
+.facilities p {
+  color: rgba(39, 39, 39, 0.8);
+  text-align: center;
+  font-size: 19px;
+  font-weight: 600;
+  line-height: 35px; /* 145.833% */
+}
