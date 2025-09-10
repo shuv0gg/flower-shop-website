@@ -137,7 +137,10 @@ header img {
 .facilities img {
   width: 70px;
   height: 70px;
-  flex-shrink: 0;
+  margin-left: 100px;
+}
+.support-img {
+  margin-right: 80px;
 }
 .facilities p {
   color: rgba(39, 39, 39, 0.8);
@@ -245,6 +248,7 @@ header img {
   display: flex;
   gap: 12px;
   margin-left: 230px;
+  margin-top: 30px;
 }
 .feedback-div input {
   width: 560px;
@@ -255,7 +259,30 @@ header img {
   background-color: #fff;
 }
 footer {
-  width: 1537px;
-  height: 449px;
-  flex-shrink: 0;
+  background-color: #111010;
+  max-width: 1536px;
+  height: 359px;
+  align-items: center;
+}
+footer h2 {
+  text-align: center;
+  color: #e55473;
+  font-size: 38px;
+  font-weight: 800;
+  padding-top: 102px;
+  padding-bottom: 20px;
+}
+footer h4 {
+  color: rgba(255, 255, 255, 0.9);
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px; /* 166.667% */
+  padding-bottom: 25px;
+}
+footer p {
+  color: rgba(255, 255, 255, 0.4);
+  text-align: center;
+  font-size: 13px;
+  font-weight: 400;
 }
