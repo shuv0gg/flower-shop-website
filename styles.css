@@ -14,6 +14,8 @@ header {
 }
 .header-div {
   margin: 157px 77px 0px 192px;
+  justify-content: center;
+  align-items: center;
 }
 header h1 {
   max-width: 708px;
@@ -34,9 +36,7 @@ header h1 {
   margin-bottom: 30px;
 }
 .primary-btn {
-  display: inline-flex;
   padding: 20px 43px;
-  align-items: flex-start;
   gap: 10px;
   border-radius: 8px;
   background: #e55473;
@@ -76,28 +76,13 @@ header img {
   margin: 0px 192px;
   gap: 20px;
 }
-.card-1 {
+.card {
   width: 371px;
   height: 430px;
   border-radius: 300px 300px 0 0;
   background-color: rgba(167, 33, 98, 0.15);
 }
 
-.card-2 {
-  width: 371px;
-  height: 430px;
-
-  border-radius: 300px 300px 0 0;
-  background-color: rgba(5, 151, 160, 0.15);
-}
-
-.card-3 {
-  width: 371px;
-  height: 430px;
-  flex-shrink: 0;
-  border-radius: 300px 300px 0 0;
-  background-color: rgba(71, 125, 17, 0.15);
-}
 .featured-cards img {
   width: 248px;
   height: 342px;
@@ -153,12 +138,15 @@ header img {
   margin-top: 102px;
   max-width: 1536px;
   display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 8px;
   background-color: rgba(229, 84, 115, 0.05);
 }
 .offer-div {
+  justify-content: center;
   align-items: center;
-  margin: 184px 148px 0px 316px;
+  margin: 184px 148px 0px 148px;
 }
 .offer h2 {
   width: 429px;
@@ -286,4 +274,219 @@ footer p {
   text-align: center;
   font-size: 13px;
   font-weight: 400;
+}
+/* ***Responsive MAX_WIDTH 480px*** */
+@media screen and (max-width: 480px) {
+  header {
+    max-width: 100%;
+  }
+  .main-div {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+  .header-div {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+  }
+  header h1 {
+    max-width: 80%;
+    font-size: 9vw;
+    margin: auto;
+  }
+  .header-div p {
+    width: 80%;
+    height: auto;
+    font-size: 2vh;
+    margin: auto;
+  }
+  .flower-image-div {
+    display: flex;
+    max-width: 80%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  .flower-image-div img {
+    max-width: 70%;
+    margin: auto;
+    /* padding: 10px; */
+  }
+  .featured-flowers {
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 15px;
+  }
+  .featured-flowers h3 {
+    font-size: 2.5vh;
+    margin-bottom: 10px;
+    margin: auto;
+  }
+  .featured-flowers p {
+    max-width: 80%;
+    font-size: 2vh;
+    margin: auto;
+    margin-bottom: 15px;
+    /* 166.667% */
+  }
+  .featured-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+  .featured-cards h3 {
+    margin: auto;
+    font-size: 2.5vh;
+  }
+  .card {
+    margin-bottom: 20px;
+  }
+  .facilities {
+    margin: auto;
+    margin-top: 20px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5vh;
+  }
+  .facilities div {
+    margin: auto;
+  }
+  .offer {
+    margin: auto;
+    max-width: 100%;
+    flex-direction: column;
+  }
+  /* .offer-div {
+    justify-content: center;
+    align-items: center;
+    margin: 184px 148px 0px 148px;
+  } */
+  .offer h2 {
+    max-width: 80%;
+    font-size: 3vh;
+    margin: auto;
+  }
+  .offer p {
+    max-width: 80%;
+    font-size: 2vh;
+    margin: auto;
+  }
+  .instagram-section {
+    align-items: center;
+    margin: auto;
+    max-width: 100%;
+    margin-top: 10px;
+  }
+  .instagram-section h2 {
+    font-size: 3vh;
+    margin: auto;
+  }
+  .instagram-section p {
+    font-size: 2vh;
+    padding: 15px;
+  }
+  .img-div {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 19px;
+    margin: auto;
+  }
+  .deals-section {
+    margin: auto;
+    background-image: none;
+    width: 100%;
+    height: auto;
+  }
+  .deals-div {
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 20px;
+    padding: 0px;
+  }
+  .feedback-div {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  .feedback-div input {
+    max-width: 80%;
+    height: 30px;
+    border: 2px solid black;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  footer {
+    max-width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+  }
+  footer h2 {
+    padding: 10px;
+  }
+  footer p {
+    margin: 10px;
+  }
+}
+/* ***Responsive MAX_WIDTH 650px*** */
+@media screen and (max-width: 650px) {
+  header {
+    max-width: 100%;
+  }
+  .main-div {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  header h1 {
+    max-width: 80%;
+    font-size: 42;
+  }
+}
+/* ***Responsive MAX_WIDTH 768px*** */
+@media screen and (max-width: 768px) {
+  header {
+    max-width: 100%;
+  }
+  .main-div {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  header h1 {
+    max-width: 80%;
+    font-size: 42;
+  }
+}
+/* ***Responsive MAX_WIDTH 1024px*** */
+@media screen and (max-width: 1024px) {
+  header {
+    max-width: 100%;
+  }
+  .main-div {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  header h1 {
+    max-width: 80%;
+    font-size: 42;
+  }
 }
