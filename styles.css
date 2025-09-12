@@ -395,8 +395,9 @@ footer p {
     margin: auto;
   }
   .instagram-section p {
+    max-width: 80%;
     font-size: 2vh;
-    padding: 15px;
+    margin: auto;
   }
   .img-div {
     flex-direction: column;
